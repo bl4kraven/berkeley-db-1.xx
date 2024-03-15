@@ -41,7 +41,7 @@
 #define	F_CLR(p, f)	(p)->flags &= ~(f)
 #define	F_ISSET(p, f)	((p)->flags & (f))
 
-#include <mpool.h>
+#include "berkeley-db/mpool.h"
 
 #define	DEFMINKEYPAGE	(2)		/* Minimum keys per page */
 #ifndef	MINCACHE
@@ -385,4 +385,4 @@ typedef struct _btree {
 	u_int32_t flags;
 } BTREE;
 
-#include "extern.h"
+#include "berkeley-db/btree_extern.h"

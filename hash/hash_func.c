@@ -40,10 +40,10 @@ static char sccsid[] = "@(#)hash_func.c	8.2 (Berkeley) 2/21/94";
 
 #include <sys/types.h>
 
-#include <db.h>
-#include "hash.h"
-#include "page.h"
-#include "extern.h"
+#include "berkeley-db/db.h"
+#include "berkeley-db/hash.h"
+#include "berkeley-db/page.h"
+#include "berkeley-db/hash_extern.h"
 
 static u_int32_t hash1 __P((const void *, size_t));
 static u_int32_t hash2 __P((const void *, size_t));

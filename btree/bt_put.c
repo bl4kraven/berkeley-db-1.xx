@@ -45,8 +45,8 @@ static char sccsid[] = "@(#)bt_put.c	8.8 (Berkeley) 7/26/94";
 #include <stdlib.h>
 #include <string.h>
 
-#include <db.h>
-#include "btree.h"
+#include "berkeley-db/db.h"
+#include "berkeley-db/btree.h"
 
 static EPG *bt_fast __P((BTREE *, const DBT *, const DBT *, int *));
 

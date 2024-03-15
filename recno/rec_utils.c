@@ -41,8 +41,8 @@ static char sccsid[] = "@(#)rec_utils.c	8.6 (Berkeley) 7/16/94";
 #include <stdlib.h>
 #include <string.h>
 
-#include <db.h>
-#include "recno.h"
+#include "berkeley-db/db.h"
+#include "berkeley-db/recno.h"
 
 /*
  * __rec_ret --

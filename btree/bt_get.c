@@ -44,8 +44,8 @@ static char sccsid[] = "@(#)bt_get.c	8.6 (Berkeley) 7/20/94";
 #include <stddef.h>
 #include <stdio.h>
 
-#include <db.h>
-#include "btree.h"
+#include "berkeley-db/db.h"
+#include "berkeley-db/btree.h"
 
 /*
  * __BT_GET -- Get a record from the btree.

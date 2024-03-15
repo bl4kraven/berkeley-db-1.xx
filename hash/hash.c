@@ -51,10 +51,10 @@ static char sccsid[] = "@(#)hash.c	8.9 (Berkeley) 6/16/94";
 #include <assert.h>
 #endif
 
-#include <db.h>
-#include "hash.h"
-#include "page.h"
-#include "extern.h"
+#include "berkeley-db/db.h"
+#include "berkeley-db/hash.h"
+#include "berkeley-db/page.h"
+#include "berkeley-db/hash_extern.h"
 
 static int   alloc_segs __P((HTAB *, int));
 static int   flush_meta __P((HTAB *));

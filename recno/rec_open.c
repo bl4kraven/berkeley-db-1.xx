@@ -49,8 +49,8 @@ static char sccsid[] = "@(#)rec_open.c	8.10 (Berkeley) 9/1/94";
 #include <stdio.h>
 #include <unistd.h>
 
-#include <db.h>
-#include "recno.h"
+#include "berkeley-db/db.h"
+#include "berkeley-db/recno.h"
 
 DB *
 __rec_open(fname, flags, mode, openinfo, dflags)

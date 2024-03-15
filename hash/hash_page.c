@@ -67,10 +67,10 @@ static char sccsid[] = "@(#)hash_page.c	8.7 (Berkeley) 8/16/94";
 #include <assert.h>
 #endif
 
-#include <db.h>
-#include "hash.h"
-#include "page.h"
-#include "extern.h"
+#include "berkeley-db/db.h"
+#include "berkeley-db/hash.h"
+#include "berkeley-db/page.h"
+#include "berkeley-db/hash_extern.h"
 
 static u_int32_t	*fetch_bitmap __P((HTAB *, int));
 static u_int32_t	 first_free __P((u_int32_t));

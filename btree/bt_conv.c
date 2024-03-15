@@ -42,8 +42,8 @@ static char sccsid[] = "@(#)bt_conv.c	8.5 (Berkeley) 8/17/94";
 
 #include <stdio.h>
 
-#include <db.h>
-#include "btree.h"
+#include "berkeley-db/db.h"
+#include "berkeley-db/btree.h"
 
 static void mswap __P((PAGE *));
 

@@ -42,8 +42,8 @@ static char sccsid[] = "@(#)rec_seq.c	8.3 (Berkeley) 7/14/94";
 #include <stdio.h>
 #include <string.h>
 
-#include <db.h>
-#include "recno.h"
+#include "berkeley-db/db.h"
+#include "berkeley-db/recno.h"
 
 /*
  * __REC_SEQ -- Recno sequential scan interface.

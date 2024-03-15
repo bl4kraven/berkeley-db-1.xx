@@ -41,9 +41,9 @@
 
 #include <limits.h>
 
-#include <filevtable.h>
+#include "berkeley-db/filevtable.h"
 #ifdef __DBINTERFACE_PRIVATE
-#include <compat.h>
+#include "berkeley-db/compat.h"
 #endif
 
 #define	RET_ERROR	-1		/* Return values. */

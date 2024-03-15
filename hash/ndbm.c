@@ -48,8 +48,8 @@ static char sccsid[] = "@(#)ndbm.c	8.4 (Berkeley) 7/21/94";
 #include <stdio.h>
 #include <string.h>
 
-#include <ndbm.h>
-#include "hash.h"
+#include "berkeley-db/ndbm.h"
+#include "berkeley-db/hash.h"
 
 /*
  * Returns:

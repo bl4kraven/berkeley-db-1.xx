@@ -44,8 +44,8 @@ static char sccsid[] = "@(#)rec_close.c	8.6 (Berkeley) 8/18/94";
 #include <stdio.h>
 #include <unistd.h>
 
-#include <db.h>
-#include "recno.h"
+#include "berkeley-db/db.h"
+#include "berkeley-db/recno.h"
 
 /*
  * __REC_CLOSE -- Close a recno tree.

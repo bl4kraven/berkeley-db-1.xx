@@ -36,17 +36,17 @@ static char sccsid[] = "@(#)mpool.c	8.5 (Berkeley) 7/26/94";
 #endif /* LIBC_SCCS and not lint */
 
 #include <sys/param.h>
-#include <bsd-queue.h>
 
 #include <errno.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
-#include <db.h>
+#include "berkeley-db/bsd-queue.h"
+#include "berkeley-db/db.h"
 
 #define	__MPOOLINTERFACE_PRIVATE
-#include <mpool.h>
+#include "berkeley-db/mpool.h"
 
 static BKT *mpool_bkt __P((MPOOL *));
 static BKT *mpool_look __P((MPOOL *, pgno_t));

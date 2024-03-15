@@ -42,8 +42,8 @@ static char sccsid[] = "@(#)bt_search.c	8.8 (Berkeley) 7/31/94";
 
 #include <stdio.h>
 
-#include <db.h>
-#include "btree.h"
+#include "berkeley-db/db.h"
+#include "berkeley-db/btree.h"
 
 static int __bt_snext __P((BTREE *, PAGE *, const DBT *, int *));
 static int __bt_sprev __P((BTREE *, PAGE *, const DBT *, int *));
