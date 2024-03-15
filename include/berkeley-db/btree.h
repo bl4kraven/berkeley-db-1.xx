@@ -41,6 +41,7 @@
 #define	F_CLR(p, f)	(p)->flags &= ~(f)
 #define	F_ISSET(p, f)	((p)->flags & (f))
 
+#include "berkeley-db/config.h"
 #include "berkeley-db/mpool.h"
 
 #define	DEFMINKEYPAGE	(2)		/* Minimum keys per page */

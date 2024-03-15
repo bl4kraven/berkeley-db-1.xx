@@ -34,11 +34,10 @@
 #ifndef _BDB_FILEVTABLE_H_
 #define _BDB_FILEVTABLE_H_
 
-#ifdef VIRT_FD_T_HEADER
-#include VIRT_FD_T_HEADER
-#endif
 #include <sys/types.h>
 #include <unistd.h>
+
+#include "berkeley-db/config.h"
 
 #ifndef virt_fd_t
 #define virt_fd_t int

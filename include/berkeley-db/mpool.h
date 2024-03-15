@@ -33,6 +33,7 @@
  *	@(#)mpool.h	8.2 (Berkeley) 7/14/94
  */
 
+#include "berkeley-db/config.h"
 #include "berkeley-db/bsd-queue.h"
 #include "berkeley-db/filevtable.h"
 

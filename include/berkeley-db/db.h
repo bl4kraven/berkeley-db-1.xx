@@ -41,6 +41,7 @@
 
 #include <limits.h>
 
+#include "berkeley-db/config.h"
 #include "berkeley-db/filevtable.h"
 #ifdef __DBINTERFACE_PRIVATE
 #include "berkeley-db/compat.h"
