@@ -34,7 +34,11 @@
 #define	_DB_H_
 
 #include <sys/types.h>
-#include <sys/cdefs.h>
+
+/* These two macros are not used in glibc anymore.  They are kept here
+    only because some other projects expect the macros to be defined.  */
+#define __P(args)       args
+#define __PMT(args)     args
 
 #include <limits.h>
 
@@ -222,7 +226,9 @@ typedef struct {
 }
 #endif
 
-__BEGIN_DECLS
+#ifdef __cplusplus
+extern "C" {
+#endif
 DB *dbopen __P((const char *, int, int, DBTYPE, const void *));
 
 #ifdef __DBINTERFACE_PRIVATE
@@ -231,5 +237,7 @@ DB	*__hash_open __P((const char *, int, int, const HASHINFO *, int));
 DB	*__rec_open __P((const char *, int, int, const RECNOINFO *, int));
 void	 __dbpanic __P((DB *dbp));
 #endif
-__END_DECLS
+#ifdef __cplusplus
+}
+#endif
 #endif /* !_DB_H_ */
