@@ -59,7 +59,9 @@ typedef struct {
 typedef DB DBM;
 #define	dbm_pagfno(a)	DBM_PAGFNO_NOT_AVAILABLE
 
-__BEGIN_DECLS
+#ifdef __cplusplus
+extern "C" {
+#endif
 void	 dbm_close __P((DBM *));
 int	 dbm_delete __P((DBM *, datum));
 datum	 dbm_fetch __P((DBM *, datum));
@@ -69,6 +71,8 @@ datum	 dbm_nextkey __P((DBM *));
 DBM	*dbm_open __P((const char *, int, int));
 int	 dbm_store __P((DBM *, datum, datum, int));
 int	 dbm_dirfno __P((DBM *));
-__END_DECLS
+#ifdef __cplusplus
+}
+#endif
 
 #endif /* !_NDBM_H_ */

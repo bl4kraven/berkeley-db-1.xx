@@ -84,7 +84,9 @@ typedef struct MPOOL {
 #endif
 } MPOOL;
 
-__BEGIN_DECLS
+#ifdef __cplusplus
+extern "C" {
+#endif
 MPOOL	*mpool_open __P((void *, virt_fd_t, const FILEVTABLE *, pgno_t, pgno_t));
 void	 mpool_filter __P((MPOOL *, void (*)(void *, pgno_t, void *),
 	    void (*)(void *, pgno_t, void *), void *));
@@ -96,4 +98,6 @@ int	 mpool_close __P((MPOOL *));
 #ifdef STATISTICS
 void	 mpool_stat __P((MPOOL *));
 #endif
-__END_DECLS
+#ifdef __cplusplus
+}
+#endif
